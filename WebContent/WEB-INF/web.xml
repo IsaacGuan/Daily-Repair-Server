@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>repairWeb</display-name>
+  
+  <servlet>  
+    <servlet-name>LoginServlet</servlet-name>  
+    <servlet-class>      
+            com.gyr.repair.servlet.LoginServlet  
+    </servlet-class>  
+  </servlet>  
+  <servlet-mapping>  
+    <servlet-name>LoginServlet</servlet-name>  
+    <url-pattern>/LoginServlet</url-pattern>  
+  </servlet-mapping>  
+  
+  <servlet>  
+    <servlet-name>RegisterServlet</servlet-name>  
+    <servlet-class>      
+            com.gyr.repair.servlet.RegisterServlet
+    </servlet-class>  
+  </servlet>  
+  <servlet-mapping>  
+    <servlet-name>RegisterServlet</servlet-name>  
+    <url-pattern>/RegisterServlet</url-pattern>  
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetOrderlistServlet</servlet-name>
+    <servlet-class>
+            com.gyr.repair.servlet.GetOrderlistServlet
+    </servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetOrderlistServlet</servlet-name>
+    <url-pattern>/GetOrderlistServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetEngineerlistServlet</servlet-name>
+    <servlet-class>
+            com.gyr.repair.servlet.GetEngineerlistServlet
+    </servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetEngineerlistServlet</servlet-name>
+    <url-pattern>/GetEngineerlistServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SendOrderServlet</servlet-name>
+    <servlet-class>
+            com.gyr.repair.servlet.SendOrderServlet
+    </servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SendOrderServlet</servlet-name>
+    <url-pattern>/SendOrderServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>TakeOrderServlet</servlet-name>
+    <servlet-class>
+            com.gyr.repair.servlet.TakeOrderServlet
+    </servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TakeOrderServlet</servlet-name>
+    <url-pattern>/TakeOrderServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CancelOrderServlet</servlet-name>
+    <servlet-class>
+            com.gyr.repair.servlet.CancelOrderServlet
+    </servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CancelOrderServlet</servlet-name>
+    <url-pattern>/CancelOrderServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CompleteOrderServlet</servlet-name>
+    <servlet-class>
+            com.gyr.repair.servlet.CompleteOrderServlet
+    </servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CompleteOrderServlet</servlet-name>
+    <url-pattern>/CompleteOrderServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeleteOrderServlet</servlet-name>
+    <servlet-class>
+            com.gyr.repair.servlet.DeleteOrderServlet
+    </servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteOrderServlet</servlet-name>
+    <url-pattern>/DeleteOrderServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ApplyEngineerServlet</servlet-name>
+    <servlet-class>
+            com.gyr.repair.servlet.ApplyEngineerServlet
+    </servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ApplyEngineerServlet</servlet-name>
+    <url-pattern>/ApplyEngineerServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>RateEngineerServlet</servlet-name>
+    <servlet-class>
+            com.gyr.repair.servlet.RateEngineerServlet
+    </servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RateEngineerServlet</servlet-name>
+    <url-pattern>/RateEngineerServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ModifyEngineerServlet</servlet-name>
+    <servlet-class>
+            com.gyr.repair.servlet.ModifyEngineerServlet
+    </servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModifyEngineerServlet</servlet-name>
+    <url-pattern>/ModifyEngineerServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetMySendedOrdersServlet</servlet-name>
+    <servlet-class>
+            com.gyr.repair.servlet.GetMySendedOrdersServlet
+    </servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetMySendedOrdersServlet</servlet-name>
+    <url-pattern>/GetMySendedOrdersServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetMyReceivedOrdersServlet</servlet-name>
+    <servlet-class>
+            com.gyr.repair.servlet.GetMyReceivedOrdersServlet
+    </servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetMyReceivedOrdersServlet</servlet-name>
+    <url-pattern>/GetMyReceivedOrdersServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ModifyPasswordServlet</servlet-name>
+    <servlet-class>
+            com.gyr.repair.servlet.ModifyPasswordServlet
+    </servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModifyPasswordServlet</servlet-name>
+    <url-pattern>/ModifyPasswordServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ExpireOrderServlet</servlet-name>
+    <servlet-class>
+            com.gyr.repair.servlet.ExpireOrderServlet
+    </servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExpireOrderServlet</servlet-name>
+    <url-pattern>/ExpireOrderServlet</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
